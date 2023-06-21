@@ -16,16 +16,16 @@
 
   <body class="bg-dark-black">
     <header
-      class="bg-dark-black absolute z-20 w-full h-[8vmin] flex justify-between items-center px-[8vmin]"
+      class="bg-dark-black absolute z-20 w-full pt-3 h-[8vmin] flex justify-between items-center px-[8vmin]"
     >
       <div class="logo flex flex-row justify-center items-center">
         <img
-          class="w-[10vmin] h-[10vmin] mx-[2vmin]"
+          class="lg:w-[10vmin] lg:h-[12vmin] w-20 mx-[2vmin]"
           src="./public/Assets/cu.svg"
           alt="CU-logo"
         />
         <img
-          class="w-[10vmin] h-[10vmin] mx-[2vmin]"
+          class="lg:w-[10vmin] lg:h-[10vmin] w-20 mx-[2vmin]"
           src="./public/Assets/techinvent.svg"
           alt="techinvent-logo"
         />
@@ -61,16 +61,17 @@
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
           >FAQ</a
         >
-
-        <a
-          class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
-          onclick="openModal()"
-          >Register</a
-        >
+        <button class="bg-white py-1 px-5 rounded">
+          <a
+            class="text-[2vmin] transition-all no-underline mx-[2vmin] cursor-pointer"
+            onclick="openModal()"
+            >Register</a
+          >
+        </button>
       </div>
     </header>
     <div
-      class="h-screen w-screen fixed hidden top-0 translate-x-full z-50 bg-dark-black"
+      class="h-screen w-screen fixed hidden top-0 translate-x-full z-30 bg-dark-black"
       id="menu"
     >
       <p
@@ -82,10 +83,10 @@
       <ul
         class="h-full w-full flex flex-col justify-start pt-44 items-center gap-10 md:gap-16 md:text-4xl text-xl text-white"
       >
-        <li class="">About us</li>
-        <li>Roles and Responsibilities</li>
-        <li>FAQ</li>
-        <a href="Register.html">Register</a>
+        <li class="cursor-pointer">About us</li>
+        <li class="cursor-pointer">Roles and Responsibilities</li>
+        <li class="cursor-pointer">FAQ</li>
+        <button class="cursor-pointer" onclick="openModal()">Register</button>
       </ul>
     </div>
     <section
@@ -112,10 +113,10 @@
         so they can grow faster
       </p> -->
       <button
-        class="text-[1.75vmin] px-[3vmin] py-[1.5vmin] font-medium rounded-[25px] my-[3vmin] z-20 cursor-pointer bg-white text-dark-black transition-all hover:scale-[1.1] border-none"
+        class="lg:text-[1.75vmin] px-[3vmin] py-[1.5vmin] font-medium rounded-[25px] my-[5vmin] z-20 cursor-pointer bg-white text-dark-black transition-all hover:scale-[1.1] border-none"
         onclick="openModal()"
       >
-        Join Us Now <span class="ml-[1.25vmin]">></span>
+        Register Now <span class="ml-[1.25vmin]"></span>
       </button>
     </section>
     <section class="details lg:px-[1vmin] mt-2 overflow-clip">
@@ -297,9 +298,9 @@
       class="bg-dark-black landing w-full flex flex-col justify-center items-center lg:my-5 py-10"
     >
       <div class="text-center text-white">
-        <b class="lg:text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20"
+        <!-- <b class="lg:text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20"
           >REWARDS</b
-        >
+        > -->
         <h1 class="lg:text-[7vmin] text-[5vmin] font-light text-white">
           Roles and Responsibilities
         </h1>
@@ -490,7 +491,7 @@
       <div
         class="landing w-full my-16 lg:my-24 flex flex-col justify-center items-center relative"
       >
-        <b class="uppercase lg:text-[1.75vmin] cursor-pointer">Rewards</b>
+        <b class="uppercase lg:text-[1.75vmin] cursor-pointer">FAQ</b>
         <h1 class="text-[4vmin] mb-0" style="color: white">
           Frequently Asked Questions
         </h1>
@@ -830,7 +831,7 @@
         scaleMobile: 1.0,
         maxDistance: 25.0,
         spacing: 20.0,
-        color: 0xaa3fff,
+        color: "#ff0000",
         backgroundColor: 0x0d0e12,
       });
     </script>
@@ -841,7 +842,7 @@
 
     <div
       id="registerModal"
-      class="z-20 hidden fixed left-0 top-0 w-full h-full overflow-auto backdrop-blur-lg"
+      class="z-50 hidden fixed left-0 top-0 w-full h-full overflow-auto backdrop-blur-lg"
     >
       <div
         class="modal relative bg-transparent my-10 mx-auto w-full box-border p-5"
