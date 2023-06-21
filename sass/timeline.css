@@ -1,0 +1,20 @@
+.gradientHeading {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.timelineStep {
+  background: var(--gradient);
+}
+
+.timelineCard {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.dull {
+  opacity: 20%;
+}
+.brighten {
+  opacity: 100%;
+}

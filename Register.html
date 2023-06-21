@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+  </head>
+
+  <body class="scroll-hidden">
+    <section
+      class="landing flex flex-col justify-center items-center relative z-20"
+      style="background-color: transparent"
+    >
+      <div
+        class="overlay pointer-events-none h-full w-full absolute top-0 left-0"
+      ></div>
+      <div class="grid place-items-center">
+        <div class="landing text-center" style="background-color: transparent">
+          <p
+            class="text-[1.7vmin] font-bold tracking-[0.7vmin] z-20 text-white mt-3 text-lg"
+          >
+            TECH INVENT
+          </p>
+          <h1 class="sm:text-3xl text-2xl text-white py-3">
+            Register as an Ambassador
+          </h1>
+        </div>
+        <div class="bg-[#fff] rounded-2xl py-4 px-10 w-[400px] mt-0">
+          <form class="text-xs">
+            <div class="flex justify-center items-center gap-4">
+              <div>
+                <p class="text-gray-500 py-2">Name*</p>
+                <input
+                  id="first-name"
+                  name="first-name"
+                  type="text"
+                  required
+                  class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                  placeholder="Name"
+                />
+              </div>
+              <div>
+                <p class="text-gray-500 py-2">Year of study*</p>
+                <input
+                  id="last-name"
+                  name="last-name"
+                  type="text"
+                  required
+                  class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                  placeholder="Year of study"
+                />
+              </div>
+            </div>
+            <div class="">
+              <p class="text-gray-500 py-2">Email*</p>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="Your email adrress"
+              />
+            </div>
+            <div>
+              <p class="text-gray-500 py-2">Password*</p>
+              <input
+                id="Password"
+                name="Password"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 placeholder:py-3 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="Your Password"
+              />
+            </div>
+            <div class="">
+              <p class="text-gray-500 py-2">Phone number*</p>
+              <input
+                id="Phone"
+                name="Phone"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="Phone Number"
+                pattern="[0-9]{10}"
+              />
+            </div>
+            <div class="">
+              <p class="text-gray-500 py-2">LinkedIN ID*</p>
+              <input
+                id="linkedin"
+                name="Phone"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="LinkedIN ID"
+              />
+            </div>
+            <div class="">
+              <p class="text-gray-500 py-2">College Name</p>
+              <input
+                id="College"
+                name="College"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="Chandigarh University"
+              />
+            </div>
+            <div class="flex justify-center items-center gap-4">
+              <div>
+                <p class="text-gray-500 py-2">College ID</p>
+                <input
+                  id="CollegeID"
+                  name="CollegeID"
+                  type="text"
+                  class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                  placeholder="XXX-XXX"
+                />
+              </div>
+              <div>
+                <p class="text-gray-500 py-2">State</p>
+                <input
+                  id="State"
+                  name="State"
+                  type="text"
+                  required
+                  class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-3 px-3 focus:outline-none focus:border-gray-300"
+                  placeholder="Punjab"
+                />
+              </div>
+            </div>
+            <div>
+              <button
+                class="bg-[#393c44] px-36 py-3 rounded-full text-white mt-2"
+                id="submit"
+              >
+                Submit
+              </button>
+            </div>
+            <p class="text-xs text-[#64666a] text-center py-2 login" id="login">
+              Already registered as an ambassador ?
+              <a href="/login.html" class="text-black font-medium"> Login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/register.js" type="module"></script>
+  </body>
+  <script type="module" src="/main.js"></script>
+</html>

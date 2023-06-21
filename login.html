@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <section
+      class="landing mt-20 sm:mt-0 w-full h-[100vmin] flex flex-col justify-center items-center relative"
+      style="background-color: transparent"
+    >
+      <div
+        class="overlay h-full w-full absolute pointer-events-none top-0 left-0"
+      ></div>
+      <div class="grid place-items-center">
+        <div class="text-center">
+          <p
+            class="text-[1.7vmin] font-bold tracking-[0.7vmin] z-20 text-white text-xl mt-3"
+          >
+            TECH INVENT
+          </p>
+          <h1 class="sm:text-5xl text-3xl text-white py-5">
+            Welcome Ambassador
+          </h1>
+        </div>
+        <div class="bg-[#fff] rounded-2xl py-6 px-10 w-[400px] mt-2 z-10">
+          <form action="" method="post">
+            <div class="text-center">
+              <h1
+                class="bg-gradient-to-tl from-[#6e54ff] via-pink-600 to-orange-800 text-2xl font-semibold bg-clip-text text-transparent"
+              >
+                Login
+              </h1>
+            </div>
+            <div class="">
+              <p class="text-gray-500 py-2">Email*</p>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 py-4 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="Your email address"
+              />
+            </div>
+            <div>
+              <p class="text-gray-500 py-2">Password*</p>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                required
+                class="peer rounded-lg h-10 w-full border-2 border-gray-300 text-gray-900 placeholder:py-4 px-3 focus:outline-none focus:border-gray-300"
+                placeholder="Your Password"
+              />
+            </div>
+            <div>
+              <button
+                class="bg-[#393c44] px-36 py-3 rounded-full text-white mt-12"
+              >
+                Login
+              </button>
+            </div>
+            <p class="text-xs text-[#64666a] text-center py-6">
+              Not registered as an ambassador yet ?
+              <a href="/Register.html" class="text-black font-medium"
+                >Register Now</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="/main.js"></script>
+</html>
