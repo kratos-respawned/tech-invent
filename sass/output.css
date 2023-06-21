@@ -524,6 +524,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .fixed{
   position: fixed;
 }
@@ -753,10 +757,6 @@ video {
   height: 120vmin;
 }
 
-.h-\[38vmin\]{
-  height: 38vmin;
-}
-
 .h-\[3vmin\]{
   height: 3vmin;
 }
@@ -767,6 +767,11 @@ video {
 
 .h-\[90vmax\]{
   height: 90vmax;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-full{
@@ -785,16 +790,20 @@ video {
   width: 2.5rem;
 }
 
+.w-52{
+  width: 13rem;
+}
+
 .w-6{
   width: 1.5rem;
 }
 
-.w-\[10vmin\]{
-  width: 10vmin;
+.w-80{
+  width: 20rem;
 }
 
-.w-\[32vmin\]{
-  width: 32vmin;
+.w-\[10vmin\]{
+  width: 10vmin;
 }
 
 .w-\[350px\]{
@@ -872,9 +881,7 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scale-150{
-  --tw-scale-x: 1.5;
-  --tw-scale-y: 1.5;
+.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1130,12 +1137,8 @@ video {
   padding: 10vmin;
 }
 
-.p-\[15vmin\]{
-  padding: 15vmin;
-}
-
-.p-\[2vmin\]{
-  padding: 2vmin;
+.p-\[5vmin\]{
+  padding: 5vmin;
 }
 
 .px-1{
@@ -1265,6 +1268,10 @@ video {
   padding-bottom: 15vmin;
 }
 
+.pl-14{
+  padding-left: 3.5rem;
+}
+
 .pl-44{
   padding-left: 11rem;
 }
@@ -1328,8 +1335,8 @@ video {
   font-size: 1.7vmin;
 }
 
-.text-\[1\.8vmin\]{
-  font-size: 1.8vmin;
+.text-\[10px\]{
+  font-size: 10px;
 }
 
 .text-\[2\.2vmin\]{
@@ -1512,6 +1519,14 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1522,6 +1537,10 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -1545,10 +1564,6 @@ video {
   );
 }
 
-.landing {
-  background-color: #0d0e12;
-}
-
 .landing .overlay {
   background: url("../Assets/Landing.png");
   background-repeat: no-repeat;
@@ -1570,6 +1585,19 @@ video {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.scroll-hidden {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .placeholder\:py-3::-moz-placeholder{
@@ -1682,6 +1710,11 @@ video {
     padding-right: 4rem;
   }
 
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1718,8 +1751,18 @@ video {
     width: 50%;
   }
 
+  .lg\:w-\[400px\]{
+    width: 400px;
+  }
+
   .lg\:w-\[500px\]{
     width: 500px;
+  }
+
+  .lg\:scale-150{
+    --tw-scale-x: 1.5;
+    --tw-scale-y: 1.5;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-4{
@@ -1738,6 +1781,10 @@ video {
     padding: 20vmin;
   }
 
+  .lg\:p-\[2vmin\]{
+    padding: 2vmin;
+  }
+
   .lg\:px-24{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -1753,9 +1800,22 @@ video {
     padding-right: 8rem;
   }
 
+  .lg\:px-36{
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
   .lg\:px-\[1vmin\]{
     padding-left: 1vmin;
     padding-right: 1vmin;
+  }
+
+  .lg\:text-\[1\.8vmin\]{
+    font-size: 1.8vmin;
+  }
+
+  .lg\:text-\[2vmin\]{
+    font-size: 2vmin;
   }
 
   .lg\:text-\[7vmin\]{
