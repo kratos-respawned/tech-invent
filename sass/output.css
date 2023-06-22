@@ -19,7 +19,6 @@
   border-style: solid;
   /* 2 */
   border-color: #e5e7eb;
-  scroll-behavior: smooth;
   /* 2 */
 }
 
@@ -620,14 +619,6 @@ video {
   margin-bottom: 5vmin;
 }
 
-.-mb-4{
-  margin-bottom: -1rem;
-}
-
-.-mt-1{
-  margin-top: -0.25rem;
-}
-
 .-mt-10{
   margin-top: -2.5rem;
 }
@@ -748,8 +739,16 @@ video {
   height: 120vmin;
 }
 
+.h-\[250px\]{
+  height: 250px;
+}
+
 .h-\[3vmin\]{
   height: 3vmin;
+}
+
+.h-\[7vmin\]{
+  height: 7vmin;
 }
 
 .h-\[8vmin\]{
@@ -758,11 +757,6 @@ video {
 
 .h-\[90vmax\]{
   height: 90vmax;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .h-full{
@@ -789,12 +783,16 @@ video {
   width: 1.5rem;
 }
 
-.w-80{
-  width: 20rem;
-}
-
 .w-\[10vmin\]{
   width: 10vmin;
+}
+
+.w-\[15vmin\]{
+  width: 15vmin;
+}
+
+.w-\[250px\]{
+  width: 250px;
 }
 
 .w-\[300px\]{
@@ -868,6 +866,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-\[0\.8\]{
+  --tw-scale-x: 0.8;
+  --tw-scale-y: 0.8;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -930,10 +934,6 @@ video {
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-6{
-  gap: 1.5rem;
 }
 
 .gap-9{
@@ -1281,10 +1281,6 @@ video {
   padding-top: 0.75rem;
 }
 
-.pt-4{
-  padding-top: 1rem;
-}
-
 .pt-44{
   padding-top: 11rem;
 }
@@ -1332,20 +1328,8 @@ video {
   font-size: 3vmin;
 }
 
-.text-\[4vmin\]{
-  font-size: 4vmin;
-}
-
-.text-\[5vmin\]{
-  font-size: 5vmin;
-}
-
 .text-\[60px\]{
   font-size: 60px;
-}
-
-.text-\[6vmin\]{
-  font-size: 6vmin;
 }
 
 .text-\[7vmin\]{
@@ -1400,12 +1384,8 @@ video {
   text-transform: uppercase;
 }
 
-.leading-\[4\.5vmin\]{
-  line-height: 4.5vmin;
-}
-
-.tracking-\[0\.2vmin\]{
-  letter-spacing: 0.2vmin;
+.leading-\[6vmin\]{
+  line-height: 6vmin;
 }
 
 .tracking-\[0\.5vmin\]{
@@ -1414,10 +1394,6 @@ video {
 
 .tracking-\[0\.7vmin\]{
   letter-spacing: 0.7vmin;
-}
-
-.tracking-widest{
-  letter-spacing: 0.1em;
 }
 
 .text-\[\#64666a\]{
@@ -1573,6 +1549,10 @@ video {
   /* Firefox */
 }
 
+.no-shadow {
+  box-shadow: none !important;
+}
+
 .placeholder\:py-3::-moz-placeholder{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1631,9 +1611,7 @@ video {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.btn{
-  width: 350px !important;
-}
+
 @media (min-width: 640px){
   .sm\:m-1{
     margin: 0.25rem;
@@ -1694,9 +1672,6 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-  .btn{
-    width: 250px !important;
-  }
 }
 
 @media (min-width: 1024px){
@@ -1735,12 +1710,8 @@ video {
     display: none;
   }
 
-  .lg\:h-\[10vmin\]{
-    height: 10vmin;
-  }
-
-  .lg\:h-\[12vmin\]{
-    height: 12vmin;
+  .lg\:h-\[7vmin\]{
+    height: 7vmin;
   }
 
   .lg\:h-screen{
@@ -1751,8 +1722,12 @@ video {
     width: 50%;
   }
 
-  .lg\:w-\[10vmin\]{
-    width: 10vmin;
+  .lg\:w-\[12vmin\]{
+    width: 12vmin;
+  }
+
+  .lg\:w-\[20vmin\]{
+    width: 20vmin;
   }
 
   .lg\:w-\[400px\]{
@@ -1771,10 +1746,8 @@ video {
     width: 85%;
   }
 
-  .lg\:scale-150{
-    --tw-scale-x: 1.5;
-    --tw-scale-y: 1.5;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -1816,11 +1789,6 @@ video {
     padding-right: 8rem;
   }
 
-  .lg\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
   .lg\:px-\[1vmin\]{
     padding-left: 1vmin;
     padding-right: 1vmin;
@@ -1838,20 +1806,12 @@ video {
     padding-top: 0.5rem;
   }
 
-  .lg\:text-justify{
-    text-align: justify;
-  }
-
-  .lg\:text-\[1\.5vmin\]{
-    font-size: 1.5vmin;
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:text-\[1\.75vmin\]{
     font-size: 1.75vmin;
-  }
-
-  .lg\:text-\[1\.7vmin\]{
-    font-size: 1.7vmin;
   }
 
   .lg\:text-\[1\.8vmin\]{
