@@ -623,8 +623,8 @@ video {
   margin-bottom: 5vmin;
 }
 
-.-mt-10{
-  margin-top: -2.5rem;
+.-mt-\[2vmin\]{
+  margin-top: -2vmin;
 }
 
 .mb-0{
@@ -645,6 +645,10 @@ video {
 
 .ml-\[1\.25vmin\]{
   margin-left: 1.25vmin;
+}
+
+.ml-\[2px\]{
+  margin-left: 2px;
 }
 
 .mt-0{
@@ -683,12 +687,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.mt-6{
+  margin-top: 1.5rem;
 }
 
-.mt-\[10vmin\]{
-  margin-top: 10vmin;
+.mt-8{
+  margin-top: 2rem;
 }
 
 .mt-\[2vmin\]{
@@ -743,10 +747,6 @@ video {
   height: 120vmin;
 }
 
-.h-\[250px\]{
-  height: 250px;
-}
-
 .h-\[3vmin\]{
   height: 3vmin;
 }
@@ -787,10 +787,6 @@ video {
   width: 10vmin;
 }
 
-.w-\[250px\]{
-  width: 250px;
-}
-
 .w-\[300px\]{
   width: 300px;
 }
@@ -822,6 +818,10 @@ video {
 
 .w-screen{
   width: 100vw;
+}
+
+.max-w-\[250px\]{
+  max-width: 250px;
 }
 
 .max-w-\[596px\]{
@@ -880,6 +880,10 @@ video {
   list-style-type: none;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -934,6 +938,10 @@ video {
 
 .gap-9{
   gap: 2.25rem;
+}
+
+.gap-y-4{
+  row-gap: 1rem;
 }
 
 .overflow-auto{
@@ -1165,11 +1173,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1250,10 +1253,6 @@ video {
   padding-bottom: 2vmin;
 }
 
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -1268,6 +1267,10 @@ video {
 
 .pl-44{
   padding-left: 11rem;
+}
+
+.pl-\[5vmin\]{
+  padding-left: 5vmin;
 }
 
 .pr-10{
@@ -1695,12 +1698,12 @@ video {
     margin-bottom: 1.25rem;
   }
 
-  .lg\:mt-32{
-    margin-top: 8rem;
+  .lg\:mt-24{
+    margin-top: 6rem;
   }
 
-  .lg\:mt-\[20vmin\]{
-    margin-top: 20vmin;
+  .lg\:mt-\[10vmin\]{
+    margin-top: 10vmin;
   }
 
   .lg\:block{
@@ -1751,8 +1754,12 @@ video {
     flex-direction: row-reverse;
   }
 
-  .lg\:gap-10{
-    gap: 2.5rem;
+  .lg\:gap-y-10{
+    row-gap: 2.5rem;
+  }
+
+  .lg\:p-4{
+    padding: 1rem;
   }
 
   .lg\:p-\[10vmin\]{
@@ -1761,10 +1768,6 @@ video {
 
   .lg\:p-\[20vmin\]{
     padding: 20vmin;
-  }
-
-  .lg\:p-\[2vmin\]{
-    padding: 2vmin;
   }
 
   .lg\:px-24{
@@ -1789,10 +1792,6 @@ video {
 
   .lg\:pb-12{
     padding-bottom: 3rem;
-  }
-
-  .lg\:pb-24{
-    padding-bottom: 6rem;
   }
 
   .lg\:pt-2{
