@@ -1630,7 +1630,9 @@ video {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-
+.btn{
+  width: 350px !important;
+}
 @media (min-width: 640px){
   .sm\:m-1{
     margin: 0.25rem;
@@ -1690,6 +1692,9 @@ video {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+  .btn{
+    width: 250px !important;
   }
 }
 
