@@ -17,14 +17,10 @@
 
   <body class="clipOut bg-dark-black">
     <header
-      class="fixed bg-dark-black absolute z-20 w-full pt-3 min-h-[8vmin] flex justify-between items-center px-[8vmin]"
+      class="fixed bg-dark-black z-40 w-full pt-3 min-h-[8vmin] flex justify-between items-center px-[8vmin]"
     >
       <div class="logo flex flex-row justify-center items-center">
-        <img
-          class=" mx-[2vmin]"
-          src="./public/Assets/cu.png"
-          alt="CU-logo"
-        />
+        <img class="mx-[2vmin]" src="./public/Assets/cu.png" alt="CU-logo" />
         <img
           class="w-20 mx-[2vmin]"
           src="./public/Assets/Tech 1.png"
@@ -48,7 +44,7 @@
       </div>
       <div class="nav hidden lg:flex flex-row justify-center items-center">
         <a
-          href="#"
+          href="#aboutSection"
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
           >About us</a
         >
@@ -84,9 +80,11 @@
       <ul
         class="h-full w-full flex flex-col justify-start pt-44 items-center gap-10 md:gap-16 md:text-4xl text-xl text-white"
       >
-        <li class="cursor-pointer">About us</li>
-        <li class="cursor-pointer">Roles and Responsibilities</li>
-        <li class="cursor-pointer">FAQ</li>
+        <a href="#aboutSection" class="close-menu cursor-pointer">About us</a>
+        <a href="#roles-and-responsibility" class="close-menu cursor-pointer"
+          >Roles and Responsibilities</a
+        >
+        <a href="#faq" class="close-menu cursor-pointer">FAQ</a>
         <button class="cursor-pointer" onclick="openModal()">Register</button>
       </ul>
     </div>
@@ -120,7 +118,7 @@
         Register Now <span class="ml-[1.25vmin]"></span>
       </button>
     </section>
-    <section class="details lg:px-[1vmin] mt-2 overflow-clip">
+    <section id="aboutSection" class="details lg:px-[1vmin] mt-2 overflow-clip">
       <div
         class="content rounded-[3vmin] bg-[#15181E] w-full h-full p-[5vmin] lg:p-[20vmin] pb-[15vmin] relative"
       >
@@ -143,7 +141,7 @@
               Biggest Tech Invent <span class="text-light-grey">2023</span>
             </h1>
             <p
-              class="text-[3vmin] text-justify text-center lg:text-left font-normal my-[0.5vmin] z-20 text-white lg:w-[85%] leading-[6vmin]"
+              class="text-[3vmin] text-justify lg:text-left font-normal my-[0.5vmin] z-20 text-white lg:w-[85%] leading-[6vmin]"
             >
               Tech Invent is a visionary series of events that aims to foster
               creativity, collaboration, and advancement within the tech
@@ -224,7 +222,7 @@
               class="box w-[250px] h-[250px] mt-[5vmin] text-center px-6 py-6 bg-light-black rounded-[3vmin] flex flex-col lg:p-[2vmin]"
             >
               <div
-                class="hidden lg:block w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
+                class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
               ></div>
               <p class="lg:text-[2vmin] text-sm text-white mt-[5vmin]">
                 Get Exclusive Certificates
@@ -239,7 +237,7 @@
               class="box w-[250px] h-[250px] mt-[5vmin] text-center px-6 py-6 bg-light-black rounded-[3vmin] flex flex-col lg:p-[2vmin]"
             >
               <div
-                class="hidden lg:block w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
+                class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
               ></div>
               <p class="lg:text-[2vmin] text-sm text-white mt-[5vmin]">
                 Networking Opportunities
@@ -254,7 +252,7 @@
               class="box w-[250px] h-[250px] mt-[5vmin] px-6 py-6 text-center bg-light-black rounded-[3vmin] flex flex-col lg:p-[2vmin]"
             >
               <div
-                class="hidden lg:block w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
+                class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
               ></div>
               <p class="lg:text-[2vmin] text-sm text-white mt-[5vmin]">
                 Campus Ambassador Award
@@ -269,7 +267,7 @@
               class="box w-[250px] h-[250px] mt-[5vmin] px-6 py-6 text-center bg-light-black rounded-[3vmin] flex flex-col lg:p-[2vmin]"
             >
               <div
-                class="hidden lg:block w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
+                class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full hidden lg:block"
               ></div>
               <p class="lg:text-[2vmin] text-sm text-white mt-[5vmin]">
                 Visit to the CU Campus
@@ -294,7 +292,9 @@
           class="text-[3vmin] text-center font-semibold tracking-[0.5vmin] z-20 w-full"
           >Roles and Responsibilitie</b
         >
-        <h1 class="text-[7vmin] text-center font-light z-20 text-white w-full px-[5vmin]">
+        <h1
+          class="text-[7vmin] text-center font-light z-20 text-white w-full px-[5vmin]"
+        >
           Drive Engagement and Inspire Others
         </h1>
       </div>
