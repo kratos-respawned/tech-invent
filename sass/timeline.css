@@ -3,6 +3,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
 .timelineStep {
   background: var(--gradient);
