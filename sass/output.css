@@ -1706,6 +1706,10 @@ video {
     margin-top: 10vmin;
   }
 
+  .lg\:mb-14{
+    margin-bottom: 3.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
