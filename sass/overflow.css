@@ -1,0 +1,4 @@
+.clipOut {
+  overflow-x: clip !important;
+  max-width: 100vw;
+}
